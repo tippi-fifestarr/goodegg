@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.egg {
+    width: 100px; /* Adjust size as needed */
+    height: 140px; /* Making height larger than width for the oval shape */
+    background-color: #fff; /* Egg color */
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Optional: adds some depth */
+    border: 1px solid black; /* Add a black border */
+  }
+  

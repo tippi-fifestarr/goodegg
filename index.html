@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <div class="container mx-auto p-4 text-center bg-zinc-800">
+        <h1 class="text-4xl font-bold underline text-blue-600">
+          Welcome to Good Egg!
+        </h1>
+        <div id="dayDisplay" class="text-xl text-right text-indigo-400">
+          <!-- Day will be rendered here -->
+          Day by day
+        </div>
+        <div class="mt-4">
+          <input type="text" id="username" placeholder="Enter your username" class="border p-2 rounded">
+          <button id="startButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Start
+          </button>
+        </div>
+        <div id="eggContainer" class="mt-4 bg-zinc-700">
+          <!-- Egg will be rendered here -->
+        </div>
+      </div>
+      <script src="dayScript.js"></script>
+</body>
+</html>

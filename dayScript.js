@@ -152,8 +152,16 @@ function renderNewEgg() {
     // Display the egg's stats
     const statsDiv = document.createElement('div');
     statsDiv.id = 'stats';
-    statsDiv.innerText = JSON.stringify(gameState.goodEggStats); // Convert the stats object to a string for display
+    statsDiv.className = 'border rounded text-indigo-300';
+    // parse the stats object into something that looks nice
+    const stats = Object.entries(gameState.goodEggStats);
+    const statsString = stats.map(stat => {
+        return `${stat[0]}: ${stat[1]}`
+    }).join('\n');
+    statsDiv.innerText = statsString;
     eggContainer.appendChild(statsDiv);
+    // statsDiv.innerText = JSON.stringify(gameState.goodEggStats); // Convert the stats object to a string for display
+    // eggContainer.appendChild(statsDiv);
 
 }
 

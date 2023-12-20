@@ -88,6 +88,7 @@ function renderNewEgg() {
     // Display the egg's stats
     const statsDiv = document.createElement('div');
     statsDiv.id = 'stats';
+    statsDiv.className = 'my-2 p-2 border rounded text-indigo-300';
     statsDiv.innerText = JSON.stringify(gameState.goodEggStats); // Convert the stats object to a string for display
     eggContainer.appendChild(statsDiv);
 

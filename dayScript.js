@@ -43,7 +43,7 @@ function startGameTimer() {
         gameState.gameDay++;
         handleDayEnd(); // this is where we will handle the day end logic
         updateGameDayDisplay();
-    }, 6000); // 6 seconds for a day
+    }, 60000); // 60 seconds for a day
 }
 
 function handleDayEnd() {
